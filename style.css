@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala&family=Ubuntu:wght@400;500;700&display=swap');
+/* FONTE */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/*ICONS*/
+
+/*VARIAVEIS PARA CSS */
+/*Assim quando precisar alterar as cores do projeto, é so mudar aqui, ao invés de mudar
+um por um no projeto inteiro*/
+:root{ 
+    --primary:#eb1ccc;
+    --secondary:#95989a;
+    --text-color: #fff;
+    --text-secondaru:#000;
+    --text-tertiary:#5d5d5d
+}
+*{
+    font-family:"Montserrat";
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/*
+body{
+    padding-bottom: 500px; /*criar um espaço em branco para poder vizualizar melhor
+}
+*/
+
+
+/* Formulário do evento */
+#event-description {
+    background: linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.8)), url("img/hrz-5.jpg");
+    background-position: center; /*centralizei a imagem de fundo*/
+    background-size: cover; /*ele coloca toda a imagem*/
+    height:85vh;  /*85%, Vai deixar um espacinho branco inferior, para incentivar o usuario de rolar para baixo*/ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /*coloquei os items no centro*/
+    color: var(--text-color)
+
+}
+
+#disclaimer h2, .data-evento {
+        color: var(--primary)
+}
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em; /*espaçamento entre os elementos*/
+}
+
+#disclaimer .evento{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 400px; /*tamanho que ele ocupa na tela */
+    font-weight:bold; /*estilo da letra, negrito, italico etc*/
+    margin-bottom:1em;
+
+}
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .data-evento{
+    font-weight: bold;
+}
+
+#forms {
+    background-color: var(--secondary); /*coloca a cor onde o formulário esta!*/
+    padding: 2em; /*aumenta as bordas do formulario*/
+    max-width: 22%;
+}
+
+#forms p {
+    font-size: 1.5em;
+    color: var(--text-secondaru);
+    margin-bottom:1em;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    margin-bottom: .3em; /*espacinhhu entre o "nome" e "digite seu nome"*/
+    font-weight:bold;
+}
+
+.form-group input, select {
+    padding: 6px 8px; /*espacinhu dentro das caixas de textos do forms*/
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.bottom {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer; /*ponteiro do mouse muda*/ 
+    opacity: 0.8;
+    border-radius: 5px; /*Deixa a bordinha do botão redondinha*/
+}
+.bottom:hover{ /*animação quando passar o ponteiro do mouse*/
+    opacity: 1;
+    }
+
+/*Beneftis section*/
+
+#key-benefits h2{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500; /* deixar quase um negrito*/
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%; /*tamanho que o texto o oculpa - se fosse 100%, ocupa linha inteira, 
+    colocando 80%  da quebra de linha no texto*/
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+.benefit .benefit-img { /*para modificar a imagem é necessário chamar apenas ela*/
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position:center;
+    background-color: rebeccapurple;
+    margin-bottom: 1em;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#benefit-1 {
+    background-image: url(img/sqr-1.jpg);
+}
+#benefit-2 {
+    background-image: url(img/sqr-2.jpg);
+}
+#benefit-3 {
+    background-image: url(img/sqr-3.jpg);
+}
+
+/*Events location*/
+
+.location {
+    height: 500px; /*tamanho da imgem no site*/
+    background-image:  linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.8)), url(img/hrz-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    margin: 0 0 30px 0;
+    justify-content: space-between;
+    padding: 0 100px;
+ 
+}
+
+#address, #about-location{
+    max-width: 100%;
+    width:500px ;
+    
+}
+
+
+#address i {
+    color: var(--primary);
+    font-size: 4em; /* os icones podem ser alterados de acordo com padrão de letras*/
+   
+}
+
+#address {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3{
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    
+}
+
+#about-location{
+    line-height: 1.5em;
+}
+
+
+/*DETAILS CONTAINER*/
+#details {
+    width: 80%;
+    margin: 0 auto;
+
+
+
+}
+.detail{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 5%;
+    margin-bottom:2em;
+}
+
+.detail img {
+    width:50%;
+
+}
+
+.detail h3{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detail-1 h3{
+
+    font-size: 3em;
+    font-weight: 700;
+}
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul{
+    list-style-position: inside; /*Coloca os Ponstos "." da lista dentro da pagina*/
+}
+.detail-description ul li{
+    margin-bottom: 0.4em;
+}
+.detail-description ul li:last-child{
+    font-weight: bold;
+
+}
+
+#details{
+    font-size:1.2em;
+}
+
+/*call to action*/
+#cta{
+    background: linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.8)), url("img/hrz-1.jpg");
+    background-position: center; /*centralizei a imagem de fundo*/
+    background-size: cover; /*ele coloca toda a imagem*/
+    height:85vh;  /*85%, Vai deixar um espacinho branco inferior, para incentivar o usuario de rolar para baixo*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*coloquei os items no centro*/
+    color: var(--text-color)
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight:500;
+
+}
+
+#cta .bottom{
+    width: 80%;
+    border-radius: 2em;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight:600;
+
+}
+
+footer {
+    text-align: center;
+    color:var(--secondary);
+    height:250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+footer h3{
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+#footer span {
+    font-weight: bold;
+}
+
+/* Mobile*/
+/*pegamos a dimensão de um mobile Large que é 425px x 920px*/
+@media screen and (max-width:450px){ 
+
+    /* Formulário do evento */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+    #disclaimer h2{
+        margin-bottom: .5em;
+    }
+    #forms{
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+   
+   /*Beneficios*/
+    .benefits{
+        flex-direction: column;
+        align-items:center;
+        width:auto;
+        padding:2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+
+    /*Localização*/
+
+    .location {
+        flex-direction: column;
+        align-items:center;
+        width:auto;
+        padding:2em 0; /* esse "0" é nas laterais*/
+    }
+
+    .location #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%
+    }
+    .location #address i {
+        margin: .3em 0;
+    }
+    .location #about-location {
+       text-align: center;
+       max-width: 300px;
+    }
+
+    #details {
+        max-width: 300px;
+        width: 80%;
+
+    
+    }
+    .detail{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-direction: column;
+        gap: 3%;
+        
+    }
+    
+    .detail img {
+        max-width: 100%;
+        width:700px;
+    
+    }
+
+    .detail-description {
+        width: 100%;
+       
+    }
+
+    #detail-1  h3{
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .detail-description ul{
+        list-style-position: inside; /*Coloca os Ponstos "." da lista dentro da pagina*/
+    }
+    .detail-description ul li{
+       
+    }
+    .detail-description ul li:last-child{
+        font-weight: bold;
+    
+    }
+    
+    #details{
+        font-size:1.2em;
+    }
+    
+    #details .detail-2 {
+        padding: 0 0 30px 0;
+    }
+
+    #details img{
+        padding: 30px 0 0 0;
+    }
+
+
+}
+
